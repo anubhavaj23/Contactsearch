@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#ddffffff"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.anubh.contactsearch.MainActivity"
+    android:id="@+id/relativeLayout">
+
+    <include
+        layout="@layout/toolbar"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical"
+        android:scrollbarStyle="insideOverlay"
+        android:fadeScrollbars="false"
+        android:scrollbarThumbVertical="@android:color/holo_green_dark"
+        android:scrollbarSize="5dp"
+
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/recyclerview"
+        android:background="#fff"
+        />
+</RelativeLayout>
